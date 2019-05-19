@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.app{
+    height:100vh;
+    display:flex;
+    width:100%;
+    background:lightgray;
+}
+
+.video-container video{
+    width:100%;
+    z-index:-2;
+    pointer-events:none;
+}
+
+.header-title{
+    position:absolute;
+    left:20%;
+    font-size:35px;
+    letter-spacing:8px;
+}
+
+.play-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+.play-container svg{
+    position:absolute;
+    right:50%;
+    pointer-events:none;
+    z-index:0;
+  
+}
+
+.play-container img{
+    position:absolute;
+    right:65%;
+}
+
+
+
+
+
+
+.slide_menu{
+     position:fixed;
+     display:flex;
+     flex-direction:column;
+     height:100%;
+     justify-content:space-around;
+     align-items:center;
+     right:0;
+     top:0;
+     width:33%;
+     transform:translateX(101%) rotate(180deg);
+     transition:2s ease;
+     background-color:lemonchiffon;
+}
+
+
+
+.timer-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    height:35%;
+    cursor:pointer;
+}
+
+.timer-container button{
+    height:30px;
+    width:55px;
+    border-radius:20%;
+    transition:1s;
+}
+
+.timer-container button:hover{
+    color:white;
+    background:black;
+}
+
+.choice-container button{
+    cursor:pointer;
+    transition:ease;
+}
+
+.choice-container:hover{
+    opacity:.7
+}
